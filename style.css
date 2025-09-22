@@ -28,8 +28,6 @@ body {
     --primary-color-dark-alt: #1e40af;
     --secondary-color: #10b981;
     --secondary-color-dark-alt: #059669;
-    --accent-color: #2563eb;
-    --accent-hover: #1e40af;
     --text-primary: #1e293b;
     --text-secondary: #475569;
     --text-white: #ffffff;
@@ -93,8 +91,38 @@ body {
     color: var(--primary-color);
 }
 
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
 
+.btn-secondary:hover {
+    background-color: var(--primary-color-dark-alt);
+    color: var(--text-white);
+    transition: background-color 0.3s ease;
+}
 
+.btn-outline-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resources-container {
+    background-color: var(--primary-color);
+}
+
+.bg-grid-item {
+    background-color: var(--background-alt);
+    border-radius: 15px;
+}
 
 
 
